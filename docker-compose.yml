@@ -1,0 +1,14 @@
+version: "3"
+services:
+  backend:
+    build:
+      context: https://github.com/bgw7/cookbook.git
+    ports:
+      - "9999:9999"
+  frontend:
+    depends_on:
+      - backend
+    build:
+      context: https://github.com/bgw7/angular-redux.git#dev
+    ports:
+      - "8080:8080"

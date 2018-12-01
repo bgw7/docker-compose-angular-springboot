@@ -8,7 +8,7 @@ https://github.com/bgw7/angular-redux
 
 https://github.com/bgw7/cookbook
 
-## Run services locally
+## Start services
 
 ```bash
 docker-compose up -d --build
